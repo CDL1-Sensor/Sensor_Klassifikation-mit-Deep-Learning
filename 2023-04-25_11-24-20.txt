@@ -1,0 +1,21 @@
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.8567182421684265
+INFO:root:Epoch 1, Validation accuracy: 0.840700089931488
+INFO:root:Epoch 2, Validation accuracy: 0.8567182421684265
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.8788858652114868
+INFO:root:Epoch 1, Validation accuracy: 0.8751388192176819
+INFO:root:Epoch 2, Validation accuracy: 0.8788858652114868
+INFO:root:Fold 3
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.8910117745399475
+INFO:root:Epoch 1, Validation accuracy: 0.887036144733429
+INFO:root:Epoch 2, Validation accuracy: 0.8910117745399475
+INFO:root:[(0, 0, 0.8567182421684265), (1, 0, 0.8788858652114868), (2, 0, 0.8910117745399475)]
+INFO:root:2
+INFO:root:fold acc score: [(0, 0, 0.8567182421684265), (1, 0, 0.8788858652114868), (2, 0, 0.8910117745399475)]
+INFO:root:Best model is model 1
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _update_step_xla while saving (showing 3 of 3). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: saved_model/sensor_model\assets

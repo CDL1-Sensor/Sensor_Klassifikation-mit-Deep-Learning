@@ -1,0 +1,7 @@
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.8713594675064087
+INFO:root:Epoch 1, Validation accuracy: 0.8518461585044861
+INFO:root:Epoch 2, Validation accuracy: 0.8713594675064087
+INFO:root:Fold 2
+INFO:root:Model 1
