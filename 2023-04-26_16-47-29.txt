@@ -134,3 +134,96 @@ INFO:root:Fold 2
 INFO:root:Model 1
 INFO:root:Fold 1
 INFO:root:Model 1
+INFO:root:Validation accuracy: 0.966598391532898
+INFO:root:Epoch 1, Validation accuracy: 0.9292241334915161
+INFO:root:Epoch 2, Validation accuracy: 0.945801854133606
+INFO:root:Epoch 3, Validation accuracy: 0.9532257318496704
+INFO:root:Epoch 4, Validation accuracy: 0.956215500831604
+INFO:root:Epoch 5, Validation accuracy: 0.9596959948539734
+INFO:root:Epoch 6, Validation accuracy: 0.9623883962631226
+INFO:root:Epoch 7, Validation accuracy: 0.9635646939277649
+INFO:root:Epoch 8, Validation accuracy: 0.9644274711608887
+INFO:root:Epoch 9, Validation accuracy: 0.9650002717971802
+INFO:root:Epoch 10, Validation accuracy: 0.966598391532898
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9723215699195862
+INFO:root:Epoch 1, Validation accuracy: 0.9699851274490356
+INFO:root:Epoch 2, Validation accuracy: 0.9687488079071045
+INFO:root:Epoch 3, Validation accuracy: 0.9696877598762512
+INFO:root:Epoch 4, Validation accuracy: 0.9696013331413269
+INFO:root:Epoch 5, Validation accuracy: 0.9712522625923157
+INFO:root:Epoch 6, Validation accuracy: 0.9706355333328247
+INFO:root:Epoch 7, Validation accuracy: 0.9718103408813477
+INFO:root:Epoch 8, Validation accuracy: 0.9723054766654968
+INFO:root:Epoch 9, Validation accuracy: 0.9726775288581848
+INFO:root:Epoch 10, Validation accuracy: 0.9723215699195862
+INFO:root:Fold 3
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9747077822685242
+INFO:root:Epoch 1, Validation accuracy: 0.9746931195259094
+INFO:root:Epoch 2, Validation accuracy: 0.9746345281600952
+INFO:root:Epoch 3, Validation accuracy: 0.9749055504798889
+INFO:root:Epoch 4, Validation accuracy: 0.9733440279960632
+INFO:root:Epoch 5, Validation accuracy: 0.9753289222717285
+INFO:root:Epoch 6, Validation accuracy: 0.9741335511207581
+INFO:root:Epoch 7, Validation accuracy: 0.9749758839607239
+INFO:root:Epoch 8, Validation accuracy: 0.9756731390953064
+INFO:root:Epoch 9, Validation accuracy: 0.975006639957428
+INFO:root:Epoch 10, Validation accuracy: 0.9747077822685242
+INFO:root:[(0, 0, 0.966598391532898), (1, 0, 0.9723215699195862), (2, 0, 0.9747077822685242)]
+INFO:root:2
+INFO:root:fold acc score: [(0, 0, 0.966598391532898), (1, 0, 0.9723215699195862), (2, 0, 0.9747077822685242)]
+INFO:root:Best model is model 1
+INFO:root:Test accuracy 0.9738885164260864
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.921022891998291
+INFO:root:Epoch 1, Validation accuracy: 0.921022891998291
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9406225681304932
+INFO:root:Epoch 1, Validation accuracy: 0.9406225681304932
+INFO:root:[(0, 0, 0.921022891998291), (1, 0, 0.9406225681304932)]
+INFO:root:1
+INFO:root:fold acc score: [(0, 0, 0.921022891998291), (1, 0, 0.9406225681304932)]
+INFO:root:Best model is model 1
+INFO:root:Test accuracy 0.9401735067367554
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9137787222862244
+INFO:root:Epoch 1, Validation accuracy: 0.9137787222862244
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9370161294937134
+INFO:root:Epoch 1, Validation accuracy: 0.9370161294937134
+INFO:root:[(0, 0, 0.9137787222862244), (1, 0, 0.9370161294937134)]
+INFO:root:1
+INFO:root:fold acc score: [(0, 0, 0.9137787222862244), (1, 0, 0.9370161294937134)]
+INFO:root:Best model is model 1
+INFO:root:Test accuracy 0.9374039173126221
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9193187952041626
+INFO:root:Epoch 1, Validation accuracy: 0.9193187952041626
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9376645684242249
+INFO:root:Epoch 1, Validation accuracy: 0.9376645684242249
+INFO:root:[(0, 0, 0.9193187952041626), (1, 0, 0.9376645684242249)]
+INFO:root:1
+INFO:root:fold acc score: [(0, 0, 0.9193187952041626), (1, 0, 0.9376645684242249)]
+INFO:root:Best model is model 1
+INFO:root:Test accuracy 0.9374605417251587
