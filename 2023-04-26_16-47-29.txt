@@ -227,3 +227,59 @@ INFO:root:1
 INFO:root:fold acc score: [(0, 0, 0.9193187952041626), (1, 0, 0.9376645684242249)]
 INFO:root:Best model is model 1
 INFO:root:Test accuracy 0.9374605417251587
+INFO:root:Fold 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9173861742019653
+INFO:root:Epoch 1, Validation accuracy: 0.9173861742019653
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9175492525100708
+INFO:root:Epoch 1, Validation accuracy: 0.9175492525100708
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9163802266120911
+INFO:root:Epoch 1, Validation accuracy: 0.9163802266120911
+INFO:root:[(0, 0, 0.9175492525100708), (1, 0, 0.9163802266120911)]
+INFO:root:0
+INFO:root:fold acc score: [(0, 0, 0.9175492525100708), (1, 0, 0.9163802266120911)]
+INFO:root:Best model is model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9175423979759216
+INFO:root:Epoch 1, Validation accuracy: 0.9175423979759216
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9160120487213135
+INFO:root:Epoch 1, Validation accuracy: 0.9160120487213135
+INFO:root:[(0, 0, 0.9175423979759216), (1, 0, 0.9160120487213135)]
+INFO:root:0
+INFO:root:fold acc score: [(0, 0, 0.9175423979759216), (1, 0, 0.9160120487213135)]
+INFO:root:Best model is model 1
+INFO:root:Test accuracy 0.9176557660102844
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.920299232006073
+INFO:root:Epoch 1, Validation accuracy: 0.920299232006073
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.915808916091919
+INFO:root:Epoch 1, Validation accuracy: 0.915808916091919
+INFO:root:Test accuracy 0.9205288290977478
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9170814752578735
+INFO:root:Epoch 1, Validation accuracy: 0.9170814752578735
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9149183034896851
+INFO:root:Epoch 1, Validation accuracy: 0.9149183034896851
+INFO:root:Test accuracy 0.9177065491676331

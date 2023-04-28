@@ -1,0 +1,540 @@
+[
+    {
+        "label": "tensorflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "dataclasses",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "model_selection",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "KFold",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "to_categorical",
+        "importPath": "keras.utils",
+        "description": "keras.utils",
+        "isExtraImport": true,
+        "detail": "keras.utils",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "ConfusionMatrixDisplay",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "ConfusionMatrixDisplay",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "Parameters",
+        "kind": 6,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "class Parameters():\n    batch_size: int = 128\n    epochs: int = 2\n    verbosity: int = 1\n    step_size: int = 374\n    number_folds: int = 2\n    output_size: int = 6\n# In[144]:\n# Loading Data\nimport pandas as pd",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "factors",
+        "kind": 2,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "def factors(n):\n    result = set()\n    for i in range(1, int(n**0.5) + 1):\n        div, mod = divmod(n, i)\n        if mod == 0:\n            result |= {i, div}\n    return result\nn_samples = X.shape[0]\nprint(factors(n_samples))\n# In[146]:",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "create_model_1",
+        "kind": 2,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "def create_model_1():\n    model = tf.keras.Sequential([\n            tf.keras.layers.Dense(16, activation='relu', input_shape=(12,)),\n            tf.keras.layers.Dropout(0.5),\n            tf.keras.layers.Dense(8, activation='relu', input_shape=(12,)),\n            tf.keras.layers.Dense(6, activation='softmax')\n    ])\n    model.compile(optimizer='adam', loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False), metrics=['accuracy'])\n    return model\n# Something like this as second Model",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "create_model_2",
+        "kind": 2,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "def create_model_2():\n    model = tf.keras.Sequential([\n        tf.keras.layers.Reshape((-1, 12), input_shape=(12,)),\n        tf.keras.layers.Conv1D(32, 5, strides=2, padding='same', activation='relu'),\n        tf.keras.layers.Conv1D(16, 3, strides=2, padding='same', activation='relu'),\n        tf.keras.layers.Flatten(),\n        tf.keras.layers.Dense(6, activation='softmax')\n    ])\n    model.compile(optimizer='adam', loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False), metrics=['accuracy'])\n    return model",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "create_model_3",
+        "kind": 2,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "def create_model_3():\n    model = tf.keras.Sequential([\n        tf.keras.layers.Reshape((-1, 12), input_shape=(12,)),\n        tf.keras.layers.Conv1D(32, 5, strides=2, padding='same', activation='relu'),\n        tf.keras.layers.Conv1D(16, 3, strides=2, padding='same', activation='relu'),\n        tf.keras.layers.Flatten(),\n        tf.keras.layers.Dense(6, activation='softmax')\n    ])\n    model.compile(optimizer='adam', loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False), metrics=['accuracy'])\n    return model",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "create_model_4",
+        "kind": 2,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "def create_model_4():\n    model = tf.keras.Sequential([\n        # Add a 1D convolutional layer\n        tf.keras.layers.Conv1D(filters=64, kernel_size=2, activation='relu', padding='same', input_shape=(timesteps, n_features)),\n        # Add LSTM layer\n        tf.keras.layers.LSTM(100),\n        # Add a dense output layer\n        tf.keras.layers.Dense(6, activation='softmax')  # Change activation function based on the nature of the output\n    ])\n    model.compile(optimizer='adam',   loss='categorical_crossentropy', metrics=['accuracy'])  # Change the loss function based on the nature of the output",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "now",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "now = datetime.now()\ndate_time_string = now.strftime(\"%Y-%m-%d_%H-%M-%S\")\nlogging.basicConfig(level=logging.INFO, filename = f\"{date_time_string}.txt\", filemode='a')\n# In[148]:\nfrom dataclasses import dataclass\n@dataclass\nclass Parameters():\n    batch_size: int = 128\n    epochs: int = 2\n    verbosity: int = 1",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "date_time_string",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "date_time_string = now.strftime(\"%Y-%m-%d_%H-%M-%S\")\nlogging.basicConfig(level=logging.INFO, filename = f\"{date_time_string}.txt\", filemode='a')\n# In[148]:\nfrom dataclasses import dataclass\n@dataclass\nclass Parameters():\n    batch_size: int = 128\n    epochs: int = 2\n    verbosity: int = 1\n    step_size: int = 374",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "df = pd.read_csv(\"Alle_Messungen_trimmed.csv\")\ndf.head(1)\n# In[145]:\ndf = df.drop(columns=[\"id\", \"user\", \"id_combined\"])\ndf.drop(['Unnamed: 0'], axis=1, inplace=True)\n# get all types of the df\ndf['time'] = pd.to_datetime(df['time'])\ndf['time'] = df['time'].astype('int64')//1e9\nle = LabelEncoder()\ndf[\"class\"] = le.fit_transform(df[\"class\"])",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "df = df.drop(columns=[\"id\", \"user\", \"id_combined\"])\ndf.drop(['Unnamed: 0'], axis=1, inplace=True)\n# get all types of the df\ndf['time'] = pd.to_datetime(df['time'])\ndf['time'] = df['time'].astype('int64')//1e9\nle = LabelEncoder()\ndf[\"class\"] = le.fit_transform(df[\"class\"])\n# In[135]:\ndef factors(n):\n    result = set()",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "df['time']",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "df['time'] = pd.to_datetime(df['time'])\ndf['time'] = df['time'].astype('int64')//1e9\nle = LabelEncoder()\ndf[\"class\"] = le.fit_transform(df[\"class\"])\n# In[135]:\ndef factors(n):\n    result = set()\n    for i in range(1, int(n**0.5) + 1):\n        div, mod = divmod(n, i)\n        if mod == 0:",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "df['time']",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "df['time'] = df['time'].astype('int64')//1e9\nle = LabelEncoder()\ndf[\"class\"] = le.fit_transform(df[\"class\"])\n# In[135]:\ndef factors(n):\n    result = set()\n    for i in range(1, int(n**0.5) + 1):\n        div, mod = divmod(n, i)\n        if mod == 0:\n            result |= {i, div}",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "le",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "le = LabelEncoder()\ndf[\"class\"] = le.fit_transform(df[\"class\"])\n# In[135]:\ndef factors(n):\n    result = set()\n    for i in range(1, int(n**0.5) + 1):\n        div, mod = divmod(n, i)\n        if mod == 0:\n            result |= {i, div}\n    return result",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"class\"]",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "df[\"class\"] = le.fit_transform(df[\"class\"])\n# In[135]:\ndef factors(n):\n    result = set()\n    for i in range(1, int(n**0.5) + 1):\n        div, mod = divmod(n, i)\n        if mod == 0:\n            result |= {i, div}\n    return result\nn_samples = X.shape[0]",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "n_samples",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "n_samples = X.shape[0]\nprint(factors(n_samples))\n# In[146]:\nfrom sklearn.model_selection import train_test_split\nfrom keras.utils import to_categorical\nX = df.values[:, 1:13]\ny = df.values[:, 13]\n# Reshape X to 3D format (samples, timesteps, features)\ntimesteps = 1  # You can choose a different number of timesteps based on the nature of your data\nn_features = X.shape[1]",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "X = df.values[:, 1:13]\ny = df.values[:, 13]\n# Reshape X to 3D format (samples, timesteps, features)\ntimesteps = 1  # You can choose a different number of timesteps based on the nature of your data\nn_features = X.shape[1]\nX = X.reshape(-1, timesteps, n_features)\n# Split the dataset into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Convert the labels to one-hot encoding\ny_train = to_categorical(y_train, num_classes=6)",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "y = df.values[:, 13]\n# Reshape X to 3D format (samples, timesteps, features)\ntimesteps = 1  # You can choose a different number of timesteps based on the nature of your data\nn_features = X.shape[1]\nX = X.reshape(-1, timesteps, n_features)\n# Split the dataset into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Convert the labels to one-hot encoding\ny_train = to_categorical(y_train, num_classes=6)\ny_test = to_categorical(y_test, num_classes=6)",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "timesteps",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "timesteps = 1  # You can choose a different number of timesteps based on the nature of your data\nn_features = X.shape[1]\nX = X.reshape(-1, timesteps, n_features)\n# Split the dataset into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Convert the labels to one-hot encoding\ny_train = to_categorical(y_train, num_classes=6)\ny_test = to_categorical(y_test, num_classes=6)\n# In[142]:\n#X_train, X_test, y_train, y_test = ms.train_test_split(df.values[:, 1:13], df.values[:, 13], test_size=0.2, random_state=42)",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "n_features",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "n_features = X.shape[1]\nX = X.reshape(-1, timesteps, n_features)\n# Split the dataset into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Convert the labels to one-hot encoding\ny_train = to_categorical(y_train, num_classes=6)\ny_test = to_categorical(y_test, num_classes=6)\n# In[142]:\n#X_train, X_test, y_train, y_test = ms.train_test_split(df.values[:, 1:13], df.values[:, 13], test_size=0.2, random_state=42)\n#X_train, X_test, y_train, y_test = ms.train_test_split(X, y, test_size=0.2, random_state=42)",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "X = X.reshape(-1, timesteps, n_features)\n# Split the dataset into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Convert the labels to one-hot encoding\ny_train = to_categorical(y_train, num_classes=6)\ny_test = to_categorical(y_test, num_classes=6)\n# In[142]:\n#X_train, X_test, y_train, y_test = ms.train_test_split(df.values[:, 1:13], df.values[:, 13], test_size=0.2, random_state=42)\n#X_train, X_test, y_train, y_test = ms.train_test_split(X, y, test_size=0.2, random_state=42)\n#dataset = tf.data.Dataset.from_tensor_slices((df.values[:, 1:13], df.values[:, 13]))",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "y_train",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "y_train = to_categorical(y_train, num_classes=6)\ny_test = to_categorical(y_test, num_classes=6)\n# In[142]:\n#X_train, X_test, y_train, y_test = ms.train_test_split(df.values[:, 1:13], df.values[:, 13], test_size=0.2, random_state=42)\n#X_train, X_test, y_train, y_test = ms.train_test_split(X, y, test_size=0.2, random_state=42)\n#dataset = tf.data.Dataset.from_tensor_slices((df.values[:, 1:13], df.values[:, 13]))\n# In[184]:\n# Template\nimport tensorflow as tf\nfrom sklearn.model_selection import KFold",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "y_test = to_categorical(y_test, num_classes=6)\n# In[142]:\n#X_train, X_test, y_train, y_test = ms.train_test_split(df.values[:, 1:13], df.values[:, 13], test_size=0.2, random_state=42)\n#X_train, X_test, y_train, y_test = ms.train_test_split(X, y, test_size=0.2, random_state=42)\n#dataset = tf.data.Dataset.from_tensor_slices((df.values[:, 1:13], df.values[:, 13]))\n# In[184]:\n# Template\nimport tensorflow as tf\nfrom sklearn.model_selection import KFold\nimport numpy as np",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "#dataset",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "#dataset = tf.data.Dataset.from_tensor_slices((df.values[:, 1:13], df.values[:, 13]))\n# In[184]:\n# Template\nimport tensorflow as tf\nfrom sklearn.model_selection import KFold\nimport numpy as np\nimport dataclasses\n# Load data and preprocess\n# split train dataset into x_train and y_train\nx_train = X_train",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "x_train",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "x_train = X_train\nx_test = X_test\ny_train = y_train\ny_test = y_test\n# Something like this as first Model\ndef create_model_1():\n    model = tf.keras.Sequential([\n            tf.keras.layers.Dense(16, activation='relu', input_shape=(12,)),\n            tf.keras.layers.Dropout(0.5),\n            tf.keras.layers.Dense(8, activation='relu', input_shape=(12,)),",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "x_test",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "x_test = X_test\ny_train = y_train\ny_test = y_test\n# Something like this as first Model\ndef create_model_1():\n    model = tf.keras.Sequential([\n            tf.keras.layers.Dense(16, activation='relu', input_shape=(12,)),\n            tf.keras.layers.Dropout(0.5),\n            tf.keras.layers.Dense(8, activation='relu', input_shape=(12,)),\n            tf.keras.layers.Dense(6, activation='softmax')",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "y_train",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "y_train = y_train\ny_test = y_test\n# Something like this as first Model\ndef create_model_1():\n    model = tf.keras.Sequential([\n            tf.keras.layers.Dense(16, activation='relu', input_shape=(12,)),\n            tf.keras.layers.Dropout(0.5),\n            tf.keras.layers.Dense(8, activation='relu', input_shape=(12,)),\n            tf.keras.layers.Dense(6, activation='softmax')\n    ])",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "y_test = y_test\n# Something like this as first Model\ndef create_model_1():\n    model = tf.keras.Sequential([\n            tf.keras.layers.Dense(16, activation='relu', input_shape=(12,)),\n            tf.keras.layers.Dropout(0.5),\n            tf.keras.layers.Dense(8, activation='relu', input_shape=(12,)),\n            tf.keras.layers.Dense(6, activation='softmax')\n    ])\n    model.compile(optimizer='adam', loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False), metrics=['accuracy'])",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "best_model_history",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "best_model_history = None  # Keep track of the best model's history\nmodel_histories = []\n# Perform cross-validation\nmodels = [create_model_4]\nbest_model = None\nnum_folds = Parameters.number_folds\nkfold = KFold(n_splits=num_folds, shuffle=True)\nfold_acc_scores = []\nfor i, (train, test) in enumerate(kfold.split(x_train, y_train)):\n    logging.info(f'Fold {i+1}')",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "model_histories",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "model_histories = []\n# Perform cross-validation\nmodels = [create_model_4]\nbest_model = None\nnum_folds = Parameters.number_folds\nkfold = KFold(n_splits=num_folds, shuffle=True)\nfold_acc_scores = []\nfor i, (train, test) in enumerate(kfold.split(x_train, y_train)):\n    logging.info(f'Fold {i+1}')\n    train_x, train_y = x_train[train], y_train[train]",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "models = [create_model_4]\nbest_model = None\nnum_folds = Parameters.number_folds\nkfold = KFold(n_splits=num_folds, shuffle=True)\nfold_acc_scores = []\nfor i, (train, test) in enumerate(kfold.split(x_train, y_train)):\n    logging.info(f'Fold {i+1}')\n    train_x, train_y = x_train[train], y_train[train]\n    test_x, test_y = x_train[test], y_train[test]\n    fold_histories = []",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "best_model",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "best_model = None\nnum_folds = Parameters.number_folds\nkfold = KFold(n_splits=num_folds, shuffle=True)\nfold_acc_scores = []\nfor i, (train, test) in enumerate(kfold.split(x_train, y_train)):\n    logging.info(f'Fold {i+1}')\n    train_x, train_y = x_train[train], y_train[train]\n    test_x, test_y = x_train[test], y_train[test]\n    fold_histories = []\n    for j, model_creator in enumerate(models):",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "num_folds",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "num_folds = Parameters.number_folds\nkfold = KFold(n_splits=num_folds, shuffle=True)\nfold_acc_scores = []\nfor i, (train, test) in enumerate(kfold.split(x_train, y_train)):\n    logging.info(f'Fold {i+1}')\n    train_x, train_y = x_train[train], y_train[train]\n    test_x, test_y = x_train[test], y_train[test]\n    fold_histories = []\n    for j, model_creator in enumerate(models):\n        model = model_creator()",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "kfold",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "kfold = KFold(n_splits=num_folds, shuffle=True)\nfold_acc_scores = []\nfor i, (train, test) in enumerate(kfold.split(x_train, y_train)):\n    logging.info(f'Fold {i+1}')\n    train_x, train_y = x_train[train], y_train[train]\n    test_x, test_y = x_train[test], y_train[test]\n    fold_histories = []\n    for j, model_creator in enumerate(models):\n        model = model_creator()\n        logging.info(f'Model {j+1}')",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "fold_acc_scores",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "fold_acc_scores = []\nfor i, (train, test) in enumerate(kfold.split(x_train, y_train)):\n    logging.info(f'Fold {i+1}')\n    train_x, train_y = x_train[train], y_train[train]\n    test_x, test_y = x_train[test], y_train[test]\n    fold_histories = []\n    for j, model_creator in enumerate(models):\n        model = model_creator()\n        logging.info(f'Model {j+1}')\n        history = model.fit(train_x, train_y, epochs=Parameters.epochs, batch_size=Parameters.batch_size, validation_data=(test_x, test_y), verbose=Parameters.verbosity)",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "best_model_index",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "best_model_index = np.argmax([score[2] for score in fold_acc_scores])\nbest_fold_idx, best_model_idx, _ = max(fold_acc_scores, key=lambda x: x[2])\nbest_model_history = model_histories[best_fold_idx][best_model_idx]\n#ogging.info(fold_acc_scores)\n#logging.info(best_model_index)\n#(best_fold, best_model_index, best_model_acc) = fold_acc_scores[best_model_index]\n#best_model = models[best_model_index]\n#logging.info(f'fold acc score: {fold_acc_scores}')\n#logging.info(f'Best model is model {best_model_index+1}')\n# Evaluate the best model on the test set",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "best_model_history",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "best_model_history = model_histories[best_fold_idx][best_model_idx]\n#ogging.info(fold_acc_scores)\n#logging.info(best_model_index)\n#(best_fold, best_model_index, best_model_acc) = fold_acc_scores[best_model_index]\n#best_model = models[best_model_index]\n#logging.info(f'fold acc score: {fold_acc_scores}')\n#logging.info(f'Best model is model {best_model_index+1}')\n# Evaluate the best model on the test set\ntest_loss, test_acc = best_model.evaluate(x_test, y_test)\nlogging.info(f'Test accuracy {test_acc}')",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "#best_model",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "#best_model = models[best_model_index]\n#logging.info(f'fold acc score: {fold_acc_scores}')\n#logging.info(f'Best model is model {best_model_index+1}')\n# Evaluate the best model on the test set\ntest_loss, test_acc = best_model.evaluate(x_test, y_test)\nlogging.info(f'Test accuracy {test_acc}')\n# In[188]:\nmodel_histories\n# In[174]:\nimport matplotlib.pyplot as plt",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "y_pred = model.predict(X_test)\n# In[ ]:\nmodel.evaluate(X_test, y_test)\n# In[ ]:\n# plot a confusion matrix\nfrom sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay\nimport matplotlib.pyplot as plt\ncm = confusion_matrix(y_test, y_pred.argmax(axis=1))\ndisp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=le.classes_)\ndisp.plot()",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "cm",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "cm = confusion_matrix(y_test, y_pred.argmax(axis=1))\ndisp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=le.classes_)\ndisp.plot()\nplt.show()\n# In[ ]:\nfrom sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay\nimport matplotlib.pyplot as plt\ny_test_labels = y_test.argmax(axis=1)\ny_pred_labels = y_pred.argmax(axis=1)\ncm = confusion_matrix(y_test_labels, y_pred_labels)",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "disp",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=le.classes_)\ndisp.plot()\nplt.show()\n# In[ ]:\nfrom sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay\nimport matplotlib.pyplot as plt\ny_test_labels = y_test.argmax(axis=1)\ny_pred_labels = y_pred.argmax(axis=1)\ncm = confusion_matrix(y_test_labels, y_pred_labels)\ndisp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=le.classes_)",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "y_test_labels",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "y_test_labels = y_test.argmax(axis=1)\ny_pred_labels = y_pred.argmax(axis=1)\ncm = confusion_matrix(y_test_labels, y_pred_labels)\ndisp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=le.classes_)\ndisp.plot()\nplt.show()\n# In[ ]:\n# Export Model for using in tensorflow.js\nget_ipython().system('mkdir -p saved_model')\nbest_model.save('saved_model/sensor_model')",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred_labels",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "y_pred_labels = y_pred.argmax(axis=1)\ncm = confusion_matrix(y_test_labels, y_pred_labels)\ndisp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=le.classes_)\ndisp.plot()\nplt.show()\n# In[ ]:\n# Export Model for using in tensorflow.js\nget_ipython().system('mkdir -p saved_model')\nbest_model.save('saved_model/sensor_model')\nbest_model.save('saved_model/sensor_model.h5')",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "cm",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "cm = confusion_matrix(y_test_labels, y_pred_labels)\ndisp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=le.classes_)\ndisp.plot()\nplt.show()\n# In[ ]:\n# Export Model for using in tensorflow.js\nget_ipython().system('mkdir -p saved_model')\nbest_model.save('saved_model/sensor_model')\nbest_model.save('saved_model/sensor_model.h5')\n# In[ ]:",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    },
+    {
+        "label": "disp",
+        "kind": 5,
+        "importPath": "DL-Modelle",
+        "description": "DL-Modelle",
+        "peekOfCode": "disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=le.classes_)\ndisp.plot()\nplt.show()\n# In[ ]:\n# Export Model for using in tensorflow.js\nget_ipython().system('mkdir -p saved_model')\nbest_model.save('saved_model/sensor_model')\nbest_model.save('saved_model/sensor_model.h5')\n# In[ ]:\n# Save the weight for the Js Model",
+        "detail": "DL-Modelle",
+        "documentation": {}
+    }
+]
