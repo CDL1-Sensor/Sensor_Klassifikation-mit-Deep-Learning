@@ -88,3 +88,6 @@ INFO:root:Test accuracy 0.8360507488250732
 INFO:root:Fold 1
 INFO:root:Model 1
 INFO:root:X.shape: (2497481, 12), y.shape: (2497481,), X_train.shape: (1997984, 1, 12), y_train.shape: (1997984, 6), X_test.shape: (499497, 1, 12), y_test.shape: (499497, 6)
+INFO:root:X.shape: (2497481, 12), y.shape: (2497481,), X_train.shape: (2081231, 5, 12), y_train.shape: (2081231, 6), X_test.shape: (416246, 5, 12), y_test.shape: (416246, 6)
+INFO:root:Fold 1
+INFO:root:Model 1
