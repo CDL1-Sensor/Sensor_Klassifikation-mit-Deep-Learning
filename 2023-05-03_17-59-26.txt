@@ -1,0 +1,90 @@
+INFO:root:X.shape: (2497481, 12), y.shape: (2497481,), X_train.shape: (2081231, 5, 12), y_train.shape: (2081231, 6), X_test.shape: (416246, 5, 12), y_test.shape: (416246, 6)
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 1.0
+INFO:root:Epoch 1, Validation accuracy: 0.5397481322288513
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 1.0
+INFO:root:Epoch 1, Validation accuracy: 0.5397481322288513
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9941056370735168
+INFO:root:Epoch 1, Validation accuracy: 0.06739524006843567
+INFO:root:Fold 3
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9916476011276245
+INFO:root:Epoch 1, Validation accuracy: 0.3194505274295807
+INFO:root:Fold 4
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 1.0
+INFO:root:Epoch 1, Validation accuracy: 0.5397481322288513
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9392647743225098
+INFO:root:Epoch 1, Validation accuracy: 0.9204307794570923
+INFO:root:Epoch 2, Validation accuracy: 0.9392647743225098
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9365620613098145
+INFO:root:Epoch 1, Validation accuracy: 0.9194207787513733
+INFO:root:Epoch 2, Validation accuracy: 0.9365620613098145
+INFO:root:Test accuracy 0.9393129348754883
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.908772885799408
+INFO:root:Epoch 1, Validation accuracy: 0.8783421516418457
+INFO:root:Epoch 2, Validation accuracy: 0.908772885799408
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9065706133842468
+INFO:root:Epoch 1, Validation accuracy: 0.8827565908432007
+INFO:root:Epoch 2, Validation accuracy: 0.9065706133842468
+INFO:root:Test accuracy 0.9085376262664795
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.8025205731391907
+INFO:root:Epoch 1, Validation accuracy: 0.7098069190979004
+INFO:root:Epoch 2, Validation accuracy: 0.8025205731391907
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.7939068675041199
+INFO:root:Epoch 1, Validation accuracy: 0.6655421853065491
+INFO:root:Epoch 2, Validation accuracy: 0.7939068675041199
+INFO:root:Test accuracy 0.8012392520904541
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.8352739810943604
+INFO:root:Epoch 1, Validation accuracy: 0.8122377395629883
+INFO:root:Epoch 2, Validation accuracy: 0.8352739810943604
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.8307123780250549
+INFO:root:Epoch 1, Validation accuracy: 0.8060154914855957
+INFO:root:Epoch 2, Validation accuracy: 0.8307123780250549
+INFO:root:Test accuracy 0.8360507488250732
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:X.shape: (2497481, 12), y.shape: (2497481,), X_train.shape: (1997984, 1, 12), y_train.shape: (1997984, 6), X_test.shape: (499497, 1, 12), y_test.shape: (499497, 6)
