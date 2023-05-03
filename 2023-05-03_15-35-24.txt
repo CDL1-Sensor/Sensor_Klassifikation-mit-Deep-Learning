@@ -1,0 +1,3 @@
+INFO:root:X.shape: (2497481, 12), y.shape: (2497481,), X_train.shape: (2081231, 5, 12), y_train.shape: (2081231, 6), X_test.shape: (416246, 5, 12), y_test.shape: (416246, 6)
+INFO:root:Fold 1
+INFO:root:Model 1
