@@ -1,0 +1,14 @@
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.07236320525407791
+INFO:root:Epoch 1, Validation accuracy: 0.07613005489110947
+INFO:root:Epoch 2, Validation accuracy: 0.08207771927118301
+INFO:root:Epoch 3, Validation accuracy: 0.03469468653202057
+INFO:root:Epoch 4, Validation accuracy: 0.10031720995903015
+INFO:root:Epoch 5, Validation accuracy: 0.07236320525407791
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.06839809566736221
+INFO:root:Epoch 1, Validation accuracy: 0.012291831895709038
+INFO:root:Epoch 2, Validation accuracy: 0.022601110860705376
+INFO:root:Epoch 3, Validation accuracy: 0.10765265673398972
+INFO:root:Epoch 4, Validation accuracy: 0.11280729621648788
+INFO:root:Epoch 5, Validation accuracy: 0.06859635561704636
