@@ -1,0 +1,27 @@
+INFO:root:Fold 1
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9103916883468628
+INFO:root:Epoch 1, Validation accuracy: 0.3947102129459381
+INFO:root:Epoch 2, Validation accuracy: 0.6184419989585876
+INFO:root:Epoch 3, Validation accuracy: 0.6779881715774536
+INFO:root:Epoch 4, Validation accuracy: 0.8433299660682678
+INFO:root:Epoch 5, Validation accuracy: 0.8113889098167419
+INFO:root:Epoch 6, Validation accuracy: 0.8609625697135925
+INFO:root:Epoch 7, Validation accuracy: 0.9114033579826355
+INFO:root:Epoch 8, Validation accuracy: 0.921520471572876
+INFO:root:Epoch 9, Validation accuracy: 0.8827865123748779
+INFO:root:Epoch 10, Validation accuracy: 0.9103916883468628
+INFO:root:Fold 2
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9163174033164978
+INFO:root:Epoch 1, Validation accuracy: 0.6221997141838074
+INFO:root:Epoch 2, Validation accuracy: 0.7201907634735107
+INFO:root:Epoch 3, Validation accuracy: 0.7401358485221863
+INFO:root:Epoch 4, Validation accuracy: 0.7978031635284424
+INFO:root:Epoch 5, Validation accuracy: 0.8858216404914856
+INFO:root:Epoch 6, Validation accuracy: 0.8892903327941895
+INFO:root:Epoch 7, Validation accuracy: 0.8814857602119446
+INFO:root:Epoch 8, Validation accuracy: 0.9239774346351624
+INFO:root:Epoch 9, Validation accuracy: 0.9179072380065918
+INFO:root:Epoch 10, Validation accuracy: 0.9163174033164978
+WARNING:matplotlib.legend:No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
