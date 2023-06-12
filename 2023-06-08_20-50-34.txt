@@ -1,0 +1,22 @@
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.9717063307762146
+INFO:root:Epoch 1, Validation accuracy: 0.9129491448402405
+INFO:root:Epoch 2, Validation accuracy: 0.9365127682685852
+INFO:root:Epoch 3, Validation accuracy: 0.9689724445343018
+INFO:root:Epoch 4, Validation accuracy: 0.9659998416900635
+INFO:root:Epoch 5, Validation accuracy: 0.9725742340087891
+INFO:root:Epoch 6, Validation accuracy: 0.9367297291755676
+INFO:root:Epoch 7, Validation accuracy: 0.9515058398246765
+INFO:root:Epoch 8, Validation accuracy: 0.9569302201271057
+INFO:root:Epoch 9, Validation accuracy: 0.9739628434181213
+INFO:root:Epoch 10, Validation accuracy: 0.971272349357605
+INFO:root:Epoch 11, Validation accuracy: 0.9618555903434753
+INFO:root:Epoch 12, Validation accuracy: 0.9530463814735413
+INFO:root:Epoch 13, Validation accuracy: 0.9746788740158081
+INFO:root:Epoch 14, Validation accuracy: 0.975134551525116
+INFO:root:Epoch 15, Validation accuracy: 0.9759373664855957
+INFO:root:Epoch 16, Validation accuracy: 0.9653488993644714
+INFO:root:Epoch 17, Validation accuracy: 0.9752213358879089
+INFO:root:Epoch 18, Validation accuracy: 0.9575811624526978
+INFO:root:Epoch 19, Validation accuracy: 0.9760675430297852
+INFO:root:Epoch 20, Validation accuracy: 0.9717063307762146
