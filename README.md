@@ -8,4 +8,7 @@ In diesem Repository erfolgt die Klassifizierung der Sensordaten mittels Deep Le
 ## Experimente und Validierungen:
 ├── DL-Experiments <br>
 │   ├── Notebook XXY  <br>
-│   └── Notebook XYY  <br>
+│   └── Notebook XYY  <br>\
+
+## Exported Model für Frontend APP:
+- https://github.com/CDL1-Sensor/Sensor_Klassifikation-mit-Deep-Learning/tree/main/saved_model/sensor_model
