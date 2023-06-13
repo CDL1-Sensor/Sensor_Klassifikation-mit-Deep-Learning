@@ -20,3 +20,4 @@ In diesem Repository erfolgt die Klassifizierung der Sensordaten mittels Deep Le
 ``` bash
 pip install -r requirements.txt
 ```
+
