@@ -21,3 +21,5 @@ In diesem Repository erfolgt die Klassifizierung der Sensordaten mittels Deep Le
 pip install -r requirements.txt
 ```
 
+### X.txt
+Das File beinhaltet einen Testdaten Satz für Fahrrad fahren. Für schnelles debugging.
