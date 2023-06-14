@@ -59,4 +59,5 @@ def create_model_1(name="model_1"):
     )
     return model
 ```
+
 Da dieses Modell weniger overfitted und in der Evaluation auf unseen Data 4/5 Acitivies richtig klassifiziert.
