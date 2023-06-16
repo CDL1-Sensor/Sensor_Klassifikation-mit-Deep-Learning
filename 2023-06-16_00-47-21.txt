@@ -1,0 +1,7 @@
+INFO:root:Model 1
+INFO:root:Validation accuracy: 0.4563406705856323
+INFO:root:Epoch 1, Validation accuracy: 0.4563406705856323
+INFO:root:Model 2
+INFO:root:Validation accuracy: 0.9217937588691711
+INFO:root:Epoch 1, Validation accuracy: 0.9217937588691711
+INFO:root:Model 3
