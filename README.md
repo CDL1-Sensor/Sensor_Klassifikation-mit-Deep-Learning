@@ -1,4 +1,4 @@
-# Klassifikation mit Deep Learning
+# [Klassifikation mit Deep Learning](https://github.com/CDL1-Sensor/Sensor_Klassifikation-mit-Deep-Learning/blob/main/DL-Modelle.ipynb)
 Abgabetermin: 16. Juni 2023  
 In diesem Repository erfolgt die Klassifizierung der Sensordaten mittels Deep Learning Modellen.  
 
